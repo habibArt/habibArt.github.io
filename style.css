@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+.navbar-nav {
+  width: 50%;
+  justify-content: space-between;
+  font-size: 1em;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: red !important;
+}
+
+.nav-item .active {
+  position: relative;
+}
+
+.nav-item .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.bg-image {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 38%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("Img/hero\ background.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 100vh;
+}
+
+.row img {
+  width: 300px;
+}
+
+#services {
+  background-color: #f0f0f0;
+  margin-top: -24px;
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+}
+
+#Projects .container .card .text-white {
+  letter-spacing: 1px;
+}
+
+#Projects .card-body {
+  margin-top: -103px !important;
+}
+
+#Projects .row img {
+  width: auto;
+  height: 450px;
+}
+
+#Projects .col-md-6 .card {
+  min-width: 18rem;
+  max-width: 25rem;
+}
+
+#Projects .ket .card-body {
+  margin-top: 0 !important;
+  color: black;
+  background-color: #ededed;
+}
+
+#Projects .ket .card-body p {
+  text-align: justify;
+}
+
+#multiCollapseBW,
+#MultiCollapseColor {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.collapse .card-img-top {
+  width: auto !important;
+  height: 350px !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar-nav {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #navbarNav {
+    background-color: white;
+  }
+
+  #navbarNav .nav-link {
+    color: black !important;
+  }
+
+  .center {
+    text-align: center;
+  }
+  .center p {
+    text-align: justify;
+  }
+  .bg-image {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 1%,
+        rgba(0, 0, 0, 0)
+      ),
+      url("Img/hero\ background.jpeg");
+  }
+
+  #services .card {
+    width: 100% !important;
+  }
+}
