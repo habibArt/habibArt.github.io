@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,15 +20,104 @@
     <link rel="stylesheet" href="aboutMe.css" />
   </head>
   <body>
-    <h1>Halaman About Me!</h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold" href="#">Habib Art</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark active"
+                aria-current="page"
+                href="Page/About/aboutMe.html"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Karya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Hubungi Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Profile -->
+    <section id="ProfileCard" class="container-md">
+      <div class="card shadow rounded p-4 w-100">
+        <div class="photo-content overflow-hidden rounded">
+          <img
+            src="../../Img/Karya David Beckham Habib Art.jpg"
+            class="hero"
+            alt="banner-hero"
+          />
+        </div>
+        <div class="profile-info row p-3 align-items-center">
+          <div class="col-md-auto">
+            <div class="photo-profile rounded-circle">
+              <img src="../../Img/photo-profile.jpg" alt="" class="Size" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="profil-detail">
+              <div class="profilname p-3">
+                <h1 class="fw-bold fs-5 text-info">
+                  Habibullah M. Toifun Najib
+                </h1>
+                <h2 class="fs-6">Seniman Lukis Wajah</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto">
+            <div class="w-auto text-center">
+              <a
+                href=""
+                class="btn border-0 text-white rounded-pill text-center bg-primary bg-gradient"
+              >
+                <i class="fa-solid fa-download"></i>
+                <span>Download resume</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Profile -->
+
+    <article id="bio" class="container card shadow mt-5">
+      <section></section>
+    </article>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
-    <!-- DOM Manipulation -->
-    <script src="../../script.js"></script>
   </body>
 </html>
