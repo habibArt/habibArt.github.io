@@ -3,7 +3,13 @@
 }
 
 body {
-  background-color: #adadad;
+  background: rgb(1, 0, 11);
+  background: linear-gradient(
+    137deg,
+    rgba(1, 0, 11, 1) 0%,
+    rgba(60, 60, 71, 1) 35%,
+    rgba(135, 135, 135, 1) 100%
+  );
 }
 
 .navbar-nav {
@@ -63,6 +69,51 @@ body {
 .photo-profile .Size {
   width: 150px;
   height: auto;
+}
+
+.text-pc {
+  color: #707070;
+}
+
+.timeline {
+  max-width: 360px;
+  border-left: 3px solid rgb(135, 104, 247);
+  padding: 0 20px 0 30px;
+  margin: auto auto 10px auto;
+}
+
+.content {
+  background-color: #599ef7;
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+
+.content::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0f5cc0;
+  border: 3px solid #ddd;
+  position: absolute;
+  top: 10px;
+  left: -42px;
+}
+
+.content::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #599ef7 transparent transparent;
+  border-width: 8px;
+  position: absolute;
+  left: -15px;
+  top: 10px;
 }
 
 @media screen and (max-width: 990px) {
