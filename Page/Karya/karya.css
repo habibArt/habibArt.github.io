@@ -33,6 +33,16 @@ body {
   width: 433px;
 }
 
+.card {
+  height: 300px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 990px) {
   .hero-image {
     padding: 0 40px !important;
@@ -40,5 +50,13 @@ body {
 
   .hero-text {
     width: 300px;
+  }
+
+  .card-img-top {
+    width: 100% !important;
+  }
+
+  .card {
+    height: auto !important;
   }
 }
