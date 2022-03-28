@@ -43,6 +43,10 @@ body {
   pointer-events: auto;
 }
 
+.img-scale {
+  transform: scale(2);
+}
+
 @media screen and (max-width: 990px) {
   .hero-image {
     padding: 0 40px !important;
@@ -57,6 +61,6 @@ body {
   }
 
   .card {
-    height: auto !important;
+    height: 200px !important;
   }
 }
