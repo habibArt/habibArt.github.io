@@ -116,6 +116,11 @@ body {
   top: 10px;
 }
 
+.sticky {
+  position: sticky !important;
+  top: 94px;
+}
+
 @media screen and (max-width: 990px) {
   .navbar-nav {
     align-items: center;

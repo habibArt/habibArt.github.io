@@ -46,6 +46,10 @@ body {
 .img-scale {
   transform: scale(2);
 }
+.img-movedY {
+  width: 180% !important;
+  transform: translate(-90px, 0px);
+}
 
 @media screen and (max-width: 990px) {
   .hero-image {
@@ -61,6 +65,6 @@ body {
   }
 
   .card {
-    height: 200px !important;
+    height: auto !important;
   }
 }
