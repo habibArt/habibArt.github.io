@@ -121,6 +121,18 @@ body {
   top: 94px;
 }
 
+.reaveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reaveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 @media screen and (max-width: 990px) {
   .navbar-nav {
     align-items: center;

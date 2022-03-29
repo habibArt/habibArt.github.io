@@ -14,3 +14,7 @@ window.addEventListener("scroll", function () {
     navbar.classList.toggle("navbar-dark");
   }
 });
+
+// animation web
+var Hero = document.getElementsByClassName("hero")[0];
+function loaded() {}
