@@ -50,10 +50,7 @@
               <a class="nav-link text-light" href="../Karya">Karya</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-light"
-                aria-current="page"
-                href="../Promo"
+              <a class="nav-link text-light" aria-current="page" href="../Promo"
                 >Promo</a
               >
             </li>
@@ -99,9 +96,7 @@
               <h2 class="mt-2">Hubungi untuk tanya boleh!</h2>
             </div>
             <div>
-              <form
-                action="https://api.whatsapp.com/send/?phone=6285236471962&text&app_absent=0"
-              >
+              <form>
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-floating">
@@ -109,9 +104,9 @@
                         type="text"
                         class="form-control"
                         id="name"
-                        placeholder="Your Name"
+                        placeholder="Nama Lengkap"
                       />
-                      <label for="name">Your Name</label>
+                      <label for="name">Nama Lengkap</label>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -120,9 +115,9 @@
                         type="email"
                         class="form-control"
                         id="email"
-                        placeholder="Your Email"
+                        placeholder="Email"
                       />
-                      <label for="email">Your Email</label>
+                      <label for="email">Email</label>
                     </div>
                   </div>
                   <div class="col-12">
@@ -130,10 +125,21 @@
                       <input
                         type="text"
                         class="form-control"
-                        id="subject"
-                        placeholder="Subject"
+                        id="topik"
+                        placeholder="Topik"
                       />
-                      <label for="subject">Subject</label>
+                      <label for="subject">Topik / Tema</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="whatsapp"
+                        placeholder="No. Wa"
+                      />
+                      <label for="subject">No. Whatsapp</label>
                     </div>
                   </div>
                   <div class="col-12">
@@ -144,12 +150,11 @@
                         id="message"
                         style="height: 150px"
                       ></textarea>
-                      <label for="message">Message</label>
+                      <label for="message">Pesan</label>
                     </div>
                   </div>
                   <div class="col-12">
-                    <a href="https://api.whatsapp.com/send/?phone=6285236471962&text&app_absent=0" class="btn btn-primary w-100 p-3"> Send Message</a>
-                    </button>
+                    <a class="btn btn-primary p-3 w-100" id="kirim">Submit</a>
                   </div>
                 </div>
               </form>
@@ -160,9 +165,11 @@
     </div>
     <!-- Contact End -->
 
-     <!-- Footer -->
-     <footer class="bg-dark bg-gradient">
-      <p class="text-center text-light p-4 mb-0">&copy; All right reserved. <b>Habib Art</b> powered By Amar Ma'ruf </p>
+    <!-- Footer -->
+    <footer class="bg-dark bg-gradient">
+      <p class="text-center text-light p-4 mb-0">
+        &copy; All right reserved. <b>Habib Art</b> powered By Amar Ma'ruf
+      </p>
     </footer>
     <!-- Akhir Footer -->
 
@@ -173,5 +180,7 @@
     ></script>
     <!-- DOM Manipulation -->
     <script src="../../script.js"></script>
+    <!-- Valdasi Form -->
+    <script src="validate.js"></script>
   </body>
 </html>
