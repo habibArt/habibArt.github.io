@@ -5,7 +5,7 @@ var email = document.getElementById("email");
 var topik = document.getElementById("topik");
 var Whatsapp = document.getElementById("whatsapp");
 var message = document.getElementById("message");
-var button = document.getElementById("kirim");
+var Form = document.getElementsByTagName("form")[0];
 
 window.addEventListener("DOMContentLoaded", () => {
   fullName.setAttribute("autocomplete", "off");
@@ -58,25 +58,25 @@ function noWhatsapp(event) {
   }
 }
 
-button.addEventListener("submit", function (event) {
+function Submit(event) {
   if (
-    !fullName.validity.valid ||
-    !email.validity.valid ||
-    !topik.validity.valid ||
-    !Whatsapp.validity.valid ||
-    !message.validity.valid
+    fullName.value === "" ||
+    email.value === "" ||
+    topik.value === "" ||
+    Whatsapp.value === ""
   ) {
+    console.log("data tidak boleh kosong");
     event.preventDefault();
   } else if (message.value == "") {
-    message.setCustomValidity(
-      "masukan Pesan yang ingin di sampaikan setidaknya 10 character"
-    );
+    message.setCustomValidity("masukan pesan jangan sampe kosong");
     message.reportValidity();
     event.preventDefault();
   } else {
     window.open("https://api.whatsapp.com/send/?phone=6285236471962", "_blank");
   }
-});
+}
+
+Form.addEventListener("submit", Submit);
 
 topik.addEventListener("input", Topik);
 
